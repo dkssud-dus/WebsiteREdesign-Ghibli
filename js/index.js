@@ -410,4 +410,4 @@ fetch(footerFile)
       if (btn) {
         btn.style.display = (window.scrollY > 300) ? "flex" : "none";
       }
-    };
+    });
