@@ -394,8 +394,8 @@ let footerFile;
 
 if (langFooter.startsWith('en')) { 
   footerFile = '../include/footer_en.html';  // 영어
-} else if (langFooter.startsWith('ja')){
-  footerFile = '../include/footer_jp.html'; // 일본어
+} else if (langFooter.startsWith('ja')) {
+  footerFile = '../include/footer_jp.html';  // 일본어
 } else {
   footerFile = '../include/footer.html';     // 기본 한국어
 }
