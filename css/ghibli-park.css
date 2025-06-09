@@ -396,9 +396,15 @@ textarea[disabled] {
   height: 100px;
   width: 1920px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 .header .logo-black {
@@ -409,10 +415,14 @@ textarea[disabled] {
   width: 156px;
 }
 .header .header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-self: flex-end;
   gap: 20px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 200px;
 }
 .header .header-box .search-box label {
@@ -506,11 +516,16 @@ textarea[disabled] {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .sub-wrap .sub-menu-inner .sub-menu-items .sub-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .sub-wrap .sub-menu-inner .sub-menu-items .sub-menu-item.ja {
   gap: 70px;
@@ -522,7 +537,9 @@ textarea[disabled] {
   padding: 20px;
   font-size: 36px;
   font-family: "SinchonRhapsody";
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   text-align: right;
   position: relative;
 }
@@ -551,13 +568,21 @@ textarea[disabled] {
   background-color: #7A8450;
 }
 .sub-wrap .sub-menu-inner .sub-menu-items .sub-menu-item .sub-menu-content {
-  flex: 4;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
   margin-left: 20px;
 }
 .sub-wrap .sub-menu-inner .sub-menu-items .sub-menu-item .sub-menu-content .sub-menu-content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px;
 }
 .sub-wrap .sub-menu-inner .sub-menu-items .sub-menu-item .sub-menu-content .sub-menu-content-item a {
@@ -570,6 +595,7 @@ textarea[disabled] {
   background-size: contain;
   color: #fff;
   font-weight: bold;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -777,15 +803,27 @@ footer .footer-inner {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 footer .footer-inner .site-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 32px;
   margin-bottom: 50px;
 }
@@ -793,6 +831,8 @@ footer .footer-inner .site-btn a img {
   margin-top: 0;
 }
 footer .footer-inner .info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 footer .footer-inner .info-wrap:last-child {
@@ -825,19 +865,33 @@ footer .footer-inner span {
   padding: 12px;
   border: none;
   border-radius: 40px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(67, 46, 46, 0.6);
   color: #FFFFFF;
   display: none; /* 스크립트로 제어 */
 }
 #topBtn:hover {
   background-color: #432E2E;
-  transform: translateY(-2px) scale(1.05);
+  -webkit-transform: translateY(-2px) scale(1.05);
+          transform: translateY(-2px) scale(1.05);
 }
 #topBtn:hover .bi {
   color: #FFFFFF;
@@ -864,16 +918,25 @@ body {
 
 section {
   height: auto;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 [class*=inner] {
   width: 1160px;
   height: inherit;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* studio-wrap */
@@ -895,11 +958,24 @@ body.ghibli-total .header-include.ghibli-total-header {
   background: #000000;
 }
 body.ghibli-total .header-include.ghibli-total-header .header .logo-black img {
-  filter: invert(100);
+  -webkit-filter: invert(100);
+          filter: invert(100);
 }
 body.ghibli-total .header-include.ghibli-total-header .header .header-box .search-box label input {
   background-color: transparent;
   border: 3px solid #FFFFFF;
+  color: #FFFFFF;
+}
+body.ghibli-total .header-include.ghibli-total-header .header .header-box .search-box label input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+body.ghibli-total .header-include.ghibli-total-header .header .header-box .search-box label input::-moz-placeholder {
+  color: #FFFFFF;
+}
+body.ghibli-total .header-include.ghibli-total-header .header .header-box .search-box label input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+body.ghibli-total .header-include.ghibli-total-header .header .header-box .search-box label input::-ms-input-placeholder {
   color: #FFFFFF;
 }
 body.ghibli-total .header-include.ghibli-total-header .header .header-box .search-box label input::placeholder {
@@ -946,15 +1022,21 @@ body.ghibli-total .header-include.ghibli-total-header .sub-wrap .sub-menu-inner 
   color: #FFFFFF;
 }
 body.ghibli-total .header-include.ghibli-total-header .sub-wrap .sub-menu-inner .sub-menu-items .sub-menu-item .sub-menu-content .sub-menu-content-item a:hover {
-  filter: invert(100) grayscale(100);
+  -webkit-filter: invert(100) grayscale(100);
+          filter: invert(100) grayscale(100);
 }
 body.ghibli-total .studio-wrap {
   position: relative;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-box-flex 0.5s ease;
+  transition: -webkit-box-flex 0.5s ease;
   transition: flex 0.5s ease;
+  transition: flex 0.5s ease, -webkit-box-flex 0.5s ease, -ms-flex 0.5s ease;
 }
 body.ghibli-total .studio-wrap::before {
   content: "";
@@ -963,21 +1045,27 @@ body.ghibli-total .studio-wrap::before {
   left: 0;
   width: 100%;
   height: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
   z-index: 2;
   pointer-events: none;
 }
 body.ghibli-total .studio-wrap.expand-left .ghibli-park-entrance {
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 body.ghibli-total .studio-wrap.expand-left .ghibli-park-entrance img {
-  transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 body.ghibli-total .studio-wrap.expand-left .ghibli-park-entrance::before {
   opacity: 0;
 }
 body.ghibli-total .studio-wrap.expand-left .ghibli-museum-entrance {
-  flex: 0 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0px;
+          flex: 0 0 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -988,16 +1076,21 @@ body.ghibli-total .studio-wrap.expand-left .ghibli-museum-entrance::before {
   opacity: 0.5;
 }
 body.ghibli-total .studio-wrap.expand-right .ghibli-museum-entrance {
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 body.ghibli-total .studio-wrap.expand-right .ghibli-museum-entrance img {
-  transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 body.ghibli-total .studio-wrap.expand-right .ghibli-museum-entrance::before {
   opacity: 0;
 }
 body.ghibli-total .studio-wrap.expand-right .ghibli-park-entrance {
-  flex: 0 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0px;
+          flex: 0 0 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -1008,34 +1101,49 @@ body.ghibli-total .studio-wrap.expand-right .ghibli-park-entrance::before {
   opacity: 0.5;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-park-entrance:hover {
-  flex: 3;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-park-entrance:hover::before {
   opacity: 0;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-park-entrance:hover img {
-  transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-park-entrance:hover ~ .ghibli-museum-entrance {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-museum-entrance:hover {
-  flex: 3;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-museum-entrance:hover::before {
   opacity: 0;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-museum-entrance:hover img {
-  transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-museum-entrance:hover ~ .ghibli-park-entrance {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 body.ghibli-total .side {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   overflow: hidden;
+  -webkit-transition: -webkit-box-flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: -webkit-box-flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), -webkit-box-flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), -ms-flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
 }
 body.ghibli-total .side::before {
@@ -1045,16 +1153,21 @@ body.ghibli-total .side::before {
   background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   z-index: 5;
+  -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
 body.ghibli-total .side img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   width: 500px;
   height: auto;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
   z-index: 10;
   pointer-events: none;
 }
@@ -1065,7 +1178,8 @@ body.ghibli-total .side.ghibli-museum-entrance {
   background: url(../images/ghibli-museum-background.png) center center/cover no-repeat;
 }
 body.ghibli-total .side.ghibli-museum-entrance img {
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 body.ghibli-total {
@@ -1079,11 +1193,24 @@ body.ghibli-total .header-include.ghibli-total-header-en {
   background: #000000;
 }
 body.ghibli-total .header-include.ghibli-total-header-en .header .logo-black img {
-  filter: invert(100);
+  -webkit-filter: invert(100);
+          filter: invert(100);
 }
 body.ghibli-total .header-include.ghibli-total-header-en .header .header-box .search-box label input {
   background-color: transparent;
   border: 3px solid #FFFFFF;
+  color: #FFFFFF;
+}
+body.ghibli-total .header-include.ghibli-total-header-en .header .header-box .search-box label input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+body.ghibli-total .header-include.ghibli-total-header-en .header .header-box .search-box label input::-moz-placeholder {
+  color: #FFFFFF;
+}
+body.ghibli-total .header-include.ghibli-total-header-en .header .header-box .search-box label input:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+body.ghibli-total .header-include.ghibli-total-header-en .header .header-box .search-box label input::-ms-input-placeholder {
   color: #FFFFFF;
 }
 body.ghibli-total .header-include.ghibli-total-header-en .header .header-box .search-box label input::placeholder {
@@ -1132,15 +1259,21 @@ body.ghibli-total .header-include.ghibli-total-header-en .sub-wrap .sub-menu-inn
   color: #FFFFFF;
 }
 body.ghibli-total .header-include.ghibli-total-header-en .sub-wrap .sub-menu-inner .sub-menu-items .sub-menu-item .sub-menu-content .sub-menu-content-item a:hover {
-  filter: invert(100) grayscale(100);
+  -webkit-filter: invert(100) grayscale(100);
+          filter: invert(100) grayscale(100);
 }
 body.ghibli-total .studio-wrap {
   position: relative;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-box-flex 0.5s ease;
+  transition: -webkit-box-flex 0.5s ease;
   transition: flex 0.5s ease;
+  transition: flex 0.5s ease, -webkit-box-flex 0.5s ease, -ms-flex 0.5s ease;
 }
 body.ghibli-total .studio-wrap::before {
   content: "";
@@ -1149,21 +1282,27 @@ body.ghibli-total .studio-wrap::before {
   left: 0;
   width: 100%;
   height: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
   z-index: 2;
   pointer-events: none;
 }
 body.ghibli-total .studio-wrap.expand-left .ghibli-park-entrance-en {
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 body.ghibli-total .studio-wrap.expand-left .ghibli-park-entrance-en img {
-  transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 body.ghibli-total .studio-wrap.expand-left .ghibli-park-entrance-en::before {
   opacity: 0;
 }
 body.ghibli-total .studio-wrap.expand-left .ghibli-museum-entrance-en {
-  flex: 0 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0px;
+          flex: 0 0 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -1174,16 +1313,21 @@ body.ghibli-total .studio-wrap.expand-left .ghibli-museum-entrance-en::before {
   opacity: 0.5;
 }
 body.ghibli-total .studio-wrap.expand-right .ghibli-museum-entrance-en {
-  flex: 1 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 body.ghibli-total .studio-wrap.expand-right .ghibli-museum-entrance-en img {
-  transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 body.ghibli-total .studio-wrap.expand-right .ghibli-museum-entrance-en::before {
   opacity: 0;
 }
 body.ghibli-total .studio-wrap.expand-right .ghibli-park-entrance-en {
-  flex: 0 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0px;
+          flex: 0 0 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -1194,34 +1338,49 @@ body.ghibli-total .studio-wrap.expand-right .ghibli-park-entrance-en::before {
   opacity: 0.5;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-park-entrance-en:hover {
-  flex: 3;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-park-entrance-en:hover::before {
   opacity: 0;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-park-entrance-en:hover img {
-  transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-park-entrance-en:hover ~ .ghibli-museum-entrance-en {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-museum-entrance-en:hover {
-  flex: 3;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-museum-entrance-en:hover::before {
   opacity: 0;
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-museum-entrance-en:hover img {
-  transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 body.ghibli-total .studio-wrap:not(.expand-left):not(.expand-right) .ghibli-museum-entrance-en:hover ~ .ghibli-park-entrance-en {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 body.ghibli-total .side {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   overflow: hidden;
+  -webkit-transition: -webkit-box-flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: -webkit-box-flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), -webkit-box-flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), -ms-flex 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
 }
 body.ghibli-total .side::before {
@@ -1231,16 +1390,21 @@ body.ghibli-total .side::before {
   background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   z-index: 5;
+  -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
 body.ghibli-total .side img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   width: 500px;
   height: auto;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease, -webkit-transform 0.5s ease;
   z-index: 10;
   pointer-events: none;
 }
@@ -1251,7 +1415,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en {
   background: url(../images/ghibli-museum-background.png) center center/cover no-repeat;
 }
 body.ghibli-total .side.ghibli-museum-entrance-en img {
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 /* park-kr */
@@ -1262,7 +1427,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   border-bottom: 1px solid rgba(122, 132, 80, 0.5);
 }
 .header-include.ghibli-park-header .header .logo-black img {
-  filter: invert(50%) sepia(23%) saturate(620%) hue-rotate(31deg) brightness(94%) contrast(88%);
+  -webkit-filter: invert(50%) sepia(23%) saturate(620%) hue-rotate(31deg) brightness(94%) contrast(88%);
+          filter: invert(50%) sepia(23%) saturate(620%) hue-rotate(31deg) brightness(94%) contrast(88%);
 }
 .ghibli-park-wrap {
   background-color: #D1DAAC;
@@ -1286,9 +1452,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 60px;
   background: rgba(122, 132, 80, 0.7);
   border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .ghibli-park-wrap .ghibli-inner .park-main .official-web:hover {
   background: #7A8450;
@@ -1304,9 +1476,16 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .ghibli-park-wrap .ghibli-inner .park-info {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
   background: #FFFFFF;
   border-radius: 15px;
@@ -1340,8 +1519,12 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-top: 20px;
 }
 .ghibli-park-wrap .ghibli-inner .park-info .park-time .time-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 200px;
   margin: 0 auto 10px;
 }
@@ -1349,14 +1532,19 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   max-width: 230px;
 }
 .ghibli-park-wrap .ghibli-inner .park-info .park-time .time-detail .day {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
   font-size: 18px;
 }
 .ghibli-park-wrap .ghibli-inner .park-info .park-time .time-detail .time {
   text-align: right;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 18px;
 }
 .ghibli-park-wrap .ghibli-inner .park-info .park-time .time-detail:last-child .day::after {
@@ -1389,11 +1577,16 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-bottom: 25px;
 }
 .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap .ticket01 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 50px;
   background: url(../images/ticket-background.png) no-repeat center center;
   background-size: cover;
@@ -1429,17 +1622,28 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: #7A8450;
 }
 .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .ticket-age {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .ticket-age span {
   font-size: 20px;
   line-height: 1.5;
 }
 .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-barcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-barcode .facilities-img {
   margin-top: 50px;
@@ -1473,9 +1677,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   opacity: 1;
 }
 .ghibli-park-wrap .ghibli-inner .notice-accordion-wrap .go-reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   width: 240px;
   height: 50px;
@@ -1485,6 +1695,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   color: #FFFFFF;
   font-family: "TTHakgyoansimUsanR";
   text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .ghibli-park-wrap .ghibli-inner .notice-accordion-wrap .go-reservation.ja {
@@ -1509,11 +1720,18 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 75px;
   background-color: #FFFBE6;
   font-size: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   margin-top: 15px;
 }
@@ -1526,11 +1744,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   font-weight: bold;
 }
 .ghibli-park-wrap .ghibli-inner .notice-accordion-wrap .notice-accordion-item .notice-accordion-title i {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   font-size: 20px;
 }
 .ghibli-park-wrap .ghibli-inner .notice-accordion-wrap .notice-accordion-item .notice-accordion-title.active i {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .ghibli-park-wrap .ghibli-inner .notice-accordion-wrap .notice-accordion-item .notice-accordion-content {
   max-height: 0;
@@ -1539,6 +1761,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   opacity: 0;
   background-color: #FFFBE6;
   visibility: hidden;
+  -webkit-transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
   transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 .ghibli-park-wrap .ghibli-inner .notice-accordion-wrap .notice-accordion-item .notice-accordion-content p {
@@ -1586,40 +1809,60 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   display: block;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-map {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 500px;
   border: none;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   background: #FFFBE6;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation h4 {
   font-size: 24px;
   font-weight: bold;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 10px;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .train,
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .bus,
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .car {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .train h5,
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .bus h5,
@@ -1641,11 +1884,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .more-notice {
   margin-top: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .more-notice ul {
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 13px;
   padding: 10px;
 }
@@ -1654,12 +1901,20 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   text-align: center;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .private-car {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: #FFFBE6;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .private-car h4 {
   font-size: 24px;
@@ -1679,11 +1934,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .private-car .more-notice {
   margin-top: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .load-way .private-car .more-notice ul {
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 13px;
   padding: 10px;
 }
@@ -1693,9 +1952,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .ghibli-park-wrap .ghibli-inner .park-load .approach-measures {
   margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   width: 430px;
   height: 60px;
@@ -1703,6 +1968,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: rgba(122, 132, 80, 0.7);
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .ghibli-park-wrap .ghibli-inner .park-load .approach-measures h3 {
@@ -1728,7 +1994,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   border-bottom: 1px solid rgba(122, 132, 80, 0.5);
 }
 .header-include.ghibli-park-header-en .header .logo-black img {
-  filter: invert(50%) sepia(23%) saturate(620%) hue-rotate(31deg) brightness(94%) contrast(88%);
+  -webkit-filter: invert(50%) sepia(23%) saturate(620%) hue-rotate(31deg) brightness(94%) contrast(88%);
+          filter: invert(50%) sepia(23%) saturate(620%) hue-rotate(31deg) brightness(94%) contrast(88%);
 }
 .header-include.ghibli-park-header-en .sub-wrap .sub-menu-inner .sub-menu-items .sub-menu-item .sub-menu-title h2 {
   font-size: 30px;
@@ -1758,9 +2025,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 60px;
   background: rgba(122, 132, 80, 0.7);
   border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .park-en .ghibli-inner .park-main .official-web:hover {
   background: #7A8450;
@@ -1773,9 +2046,16 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .park-en .ghibli-inner .park-info {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
   background: #FFFFFF;
   border-radius: 15px;
@@ -1809,14 +2089,22 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-top: 20px;
 }
 .park-en .ghibli-inner .park-info .park-time .time-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 300px;
   margin: 0 auto 10px;
 }
 .park-en .ghibli-inner .park-info .park-time .time-detail .day {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
   font-size: 18px;
 }
@@ -1825,7 +2113,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .park-en .ghibli-inner .park-info .park-time .time-detail .time {
   text-align: right;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 18px;
 }
 .park-en .ghibli-inner .park-info .park-time .time-detail:last-child .day::after {
@@ -1858,11 +2147,16 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-bottom: 25px;
 }
 .park-en .ghibli-inner .park-ticket .ticket-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .park-en .ghibli-inner .park-ticket .ticket-wrap .ticket01 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 50px;
   background: url(../images/ticket-background.png) no-repeat center center;
   background-size: cover;
@@ -1895,17 +2189,28 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: #7A8450;
 }
 .park-en .ghibli-inner .park-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .ticket-age {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .park-en .ghibli-inner .park-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .ticket-age span {
   font-size: 20px;
   line-height: 1.5;
 }
 .park-en .ghibli-inner .park-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-barcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .park-en .ghibli-inner .park-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-barcode .facilities-img {
   margin-top: 50px;
@@ -1939,9 +2244,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   opacity: 1;
 }
 .park-en .ghibli-inner .notice-accordion-wrap .go-reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   width: 290px;
   height: 50px;
@@ -1951,6 +2262,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   color: #FFFFFF;
   font-family: "TTHakgyoansimUsanR";
   text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .park-en .ghibli-inner .notice-accordion-wrap .go-reservation:hover {
@@ -1972,11 +2284,18 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 75px;
   background-color: #FFFBE6;
   font-size: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   margin-top: 15px;
 }
@@ -1989,11 +2308,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   font-weight: bold;
 }
 .park-en .ghibli-inner .notice-accordion-wrap .notice-accordion-item .notice-accordion-title i {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   font-size: 20px;
 }
 .park-en .ghibli-inner .notice-accordion-wrap .notice-accordion-item .notice-accordion-title.active i {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .park-en .ghibli-inner .notice-accordion-wrap .notice-accordion-item .notice-accordion-content {
   max-height: 0;
@@ -2002,6 +2325,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   opacity: 0;
   background-color: #FFFBE6;
   visibility: hidden;
+  -webkit-transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
   transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 .park-en .ghibli-inner .notice-accordion-wrap .notice-accordion-item .notice-accordion-content ul {
@@ -2045,40 +2369,60 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   display: block;
 }
 .park-en .ghibli-inner .park-load .load-map {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 500px;
   border: none;
 }
 .park-en .ghibli-inner .park-load .load-way {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 .park-en .ghibli-inner .park-load .load-way .public-transportation {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   background: #FFFBE6;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .park-en .ghibli-inner .park-load .load-way .public-transportation h4 {
   font-size: 24px;
   font-weight: bold;
 }
 .park-en .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 10px;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .park-en .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .train,
 .park-en .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .bus,
 .park-en .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .car {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .park-en .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .train h5,
 .park-en .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .bus h5,
@@ -2099,11 +2443,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .park-en .ghibli-inner .park-load .load-way .public-transportation .more-notice {
   margin-top: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .park-en .ghibli-inner .park-load .load-way .public-transportation .more-notice ul {
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 13px;
   padding: 10px;
 }
@@ -2111,12 +2459,20 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   text-align: center;
 }
 .park-en .ghibli-inner .park-load .load-way .private-car {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: #FFFBE6;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .park-en .ghibli-inner .park-load .load-way .private-car h4 {
   font-size: 24px;
@@ -2135,11 +2491,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .park-en .ghibli-inner .park-load .load-way .private-car .more-notice {
   margin-top: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .park-en .ghibli-inner .park-load .load-way .private-car .more-notice ul {
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 13px;
   padding: 10px;
 }
@@ -2148,9 +2508,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .park-en .ghibli-inner .park-load .approach-measures {
   margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   width: 630px;
   height: 60px;
@@ -2158,6 +2524,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: rgba(122, 132, 80, 0.7);
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .park-en .ghibli-inner .park-load .approach-measures h3 {
@@ -2179,7 +2546,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   border-bottom: 1px solid rgba(240, 162, 92, 0.5);
 }
 .ghibli-museum-header .header .logo-black img {
-  filter: invert(86%) sepia(8%) saturate(5451%) hue-rotate(317deg) brightness(97%) contrast(94%);
+  -webkit-filter: invert(86%) sepia(8%) saturate(5451%) hue-rotate(317deg) brightness(97%) contrast(94%);
+          filter: invert(86%) sepia(8%) saturate(5451%) hue-rotate(317deg) brightness(97%) contrast(94%);
 }
 .ghibli-museum-header .header .header-box .search-box label {
   position: relative;
@@ -2250,9 +2618,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 60px;
   background: rgba(240, 162, 92, 0.7);
   border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .ghibli-museum-wrap .ghibli-inner .museum-main .official-web:hover {
   background: #F0A25C;
@@ -2268,9 +2642,16 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .ghibli-museum-wrap .ghibli-inner .museum-info {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
   background: #FFFFFF;
   border-radius: 15px;
@@ -2304,13 +2685,18 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-top: 20px;
 }
 .ghibli-museum-wrap .ghibli-inner .museum-info .museum-time .time-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 200px;
   margin: 0 auto 10px;
 }
 .ghibli-museum-wrap .ghibli-inner .museum-info .museum-time .time {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 18px;
 }
 .ghibli-museum-wrap .ghibli-inner .museum-info .time-detail:last-child .day::after {
@@ -2343,11 +2729,16 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-bottom: 25px;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket01 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 50px;
   background: url(../images/ticket-background-me.png) no-repeat center center;
   background-size: cover;
@@ -2359,7 +2750,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 700px;
   background-color: rgba(240, 162, 92, 0.5);
   margin: 0 20px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket01 h2 {
   font-family: "TTHakgyoansimUsanR";
@@ -2392,13 +2784,22 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: #F0A25C;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
   width: 100%;
-  box-sizing: border-box;
-  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
   margin-bottom: 15px;
   border: none;
@@ -2417,17 +2818,28 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: #F0A25C;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .ticket-age {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .ticket-age span {
   font-size: 20px;
   line-height: 1.5;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-barcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-barcode .park-mini-logo {
   margin-top: 50px;
@@ -2440,7 +2852,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   display: block;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket02 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 50px;
   background: url(../images/ticket-background-me.png) no-repeat center center;
   background-size: cover;
@@ -2456,15 +2869,23 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   font-family: "CHIKARA-YOWAKU";
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket02 .explan-reservation {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #FFFFFF;
   width: 465px;
   height: 110px;
   border-radius: 10px;
-  box-shadow: 0 0 5px #F0A25C;
+  -webkit-box-shadow: 0 0 5px #F0A25C;
+          box-shadow: 0 0 5px #F0A25C;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 10px;
   font-size: 18px;
@@ -2485,7 +2906,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 40px;
   line-height: 40px;
   background: #FFFFFF;
-  box-shadow: 0 0 10px #F0A25C;
+  -webkit-box-shadow: 0 0 10px #F0A25C;
+          box-shadow: 0 0 10px #F0A25C;
   font-size: 20px;
   margin: auto;
   border-radius: 30px;
@@ -2513,15 +2935,26 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-bottom: 15px;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket02 .lo-ticket-download .qr-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 40px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 15px;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket02 .lo-ticket-download .qr-wrap .each-qr {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .ghibli-museum-wrap .museum-ticket .ticket-wrap .ticket02 .lo-ticket-download .qr-wrap .each-qr .qr-img {
   margin-bottom: 10px;
@@ -2542,9 +2975,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 .ghibli-museum-wrap .notice-accordion-wrap .go-reservation {
   font-family: "TTHakgyoansimUsanR";
   font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   width: 240px;
   height: 50px;
@@ -2554,6 +2993,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   color: #FFFFFF;
   font-weight: bold;
   text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .ghibli-museum-wrap .notice-accordion-wrap .go-reservation.ja {
@@ -2576,11 +3016,18 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 75px;
   background-color: #FFFBE6;
   font-size: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   margin-top: 15px;
 }
@@ -2593,11 +3040,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   font-weight: bold;
 }
 .ghibli-museum-wrap .notice-accordion-wrap .notice-accordion-item .notice-accordion-title i {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   font-size: 20px;
 }
 .ghibli-museum-wrap .notice-accordion-wrap .notice-accordion-item .notice-accordion-title.active i {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .ghibli-museum-wrap .notice-accordion-wrap .notice-accordion-item .notice-accordion-content {
   max-height: 0;
@@ -2606,6 +3057,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   opacity: 0;
   background-color: #FFFBE6;
   visibility: hidden;
+  -webkit-transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
   transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
   line-height: 150%;
 }
@@ -2653,7 +3105,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   display: block;
 }
 .ghibli-museum-wrap .museum-load .load-map {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 500px;
   border: none;
@@ -2661,33 +3114,52 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .ghibli-museum-wrap .museum-load .load-way {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 .ghibli-museum-wrap .museum-load .load-way .public-transportation {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   background: #FFFBE6;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .ghibli-museum-wrap .museum-load .load-way .public-transportation h4 {
   font-size: 24px;
   font-weight: bold;
 }
 .ghibli-museum-wrap .museum-load .load-way .public-transportation .way-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 10px;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .ghibli-museum-wrap .museum-load .load-way .public-transportation .way-title-wrap .train,
 .ghibli-museum-wrap .museum-load .load-way .public-transportation .way-title-wrap .bus,
 .ghibli-museum-wrap .museum-load .load-way .public-transportation .way-title-wrap .car {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .ghibli-museum-wrap .museum-load .load-way .public-transportation .way-title-wrap .train h5,
 .ghibli-museum-wrap .museum-load .load-way .public-transportation .way-title-wrap .bus h5,
@@ -2708,12 +3180,20 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin: 0 10px;
 }
 .ghibli-museum-wrap .museum-load .load-way .private-car {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: #FFFBE6;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .ghibli-museum-wrap .museum-load .load-way .private-car h4 {
   font-size: 24px;
@@ -2733,11 +3213,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .ghibli-museum-wrap .museum-load .load-way .private-car .more-notice {
   margin-top: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .ghibli-museum-wrap .museum-load .load-way .private-car .more-notice ul {
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 13px;
   padding: 10px;
 }
@@ -2746,9 +3230,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .ghibli-museum-wrap .museum-load .approach-measures {
   margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   width: 430px;
   height: 60px;
@@ -2756,6 +3246,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: rgba(240, 162, 92, 0.7);
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .ghibli-museum-wrap .museum-load .approach-measures h3 {
@@ -2781,7 +3272,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   border-bottom: 1px solid rgba(240, 162, 92, 0.5);
 }
 .header-include.ghibli-museum-header-en .header .logo-black img {
-  filter: invert(86%) sepia(8%) saturate(5451%) hue-rotate(317deg) brightness(97%) contrast(94%);
+  -webkit-filter: invert(86%) sepia(8%) saturate(5451%) hue-rotate(317deg) brightness(97%) contrast(94%);
+          filter: invert(86%) sepia(8%) saturate(5451%) hue-rotate(317deg) brightness(97%) contrast(94%);
 }
 .header-include.ghibli-museum-header-en .header .header-box .search-box label {
   position: relative;
@@ -2848,9 +3340,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 60px;
   background: rgba(240, 162, 92, 0.7);
   border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .museum-en .ghibli-inner .museum-main .official-web:hover {
   background: #F0A25C;
@@ -2863,9 +3361,16 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .museum-en .ghibli-inner .museum-info {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
   background: #FFFFFF;
   border-radius: 15px;
@@ -2899,13 +3404,18 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-top: 20px;
 }
 .museum-en .ghibli-inner .museum-info .museum-time .time-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 200px;
   margin: 0 auto 10px;
 }
 .museum-en .ghibli-inner .museum-info .museum-time .time {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   font-size: 18px;
 }
 .museum-en .ghibli-inner .museum-info .time-detail:last-child .day::after {
@@ -2938,11 +3448,16 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-bottom: 25px;
 }
 .museum-en .museum-ticket .ticket-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket01 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 50px;
   background: url(../images/ticket-background-me.png) no-repeat center center;
   background-size: cover;
@@ -2954,7 +3469,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 700px;
   background-color: rgba(240, 162, 92, 0.5);
   margin: 0 20px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket01 h2 {
   font-family: "TTHakgyoansimUsanR";
@@ -2984,15 +3500,23 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: #F0A25C;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 0;
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   margin-bottom: 15px;
   border: none;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   text-align: left;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .wrap h3 {
@@ -3015,17 +3539,28 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: #F0A25C;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .ticket-age {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-detail .ticket-age span {
   font-size: 20px;
   line-height: 1.5;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-barcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket01 .ticket-detail-wrap .ticket-barcode .park-mini-logo {
   margin-top: 50px;
@@ -3038,7 +3573,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   display: block;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket02 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 30px 50px;
   background: url(../images/ticket-background-me.png) no-repeat center center;
   background-size: cover;
@@ -3051,15 +3587,23 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-bottom: 20px;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket02 .explan-reservation {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #FFFFFF;
   width: 465px;
   height: 110px;
   border-radius: 10px;
-  box-shadow: 0 0 5px #F0A25C;
+  -webkit-box-shadow: 0 0 5px #F0A25C;
+          box-shadow: 0 0 5px #F0A25C;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 10px 15px;
   font-size: 18px;
@@ -3082,7 +3626,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 40px;
   line-height: 40px;
   background: #FFFFFF;
-  box-shadow: 0 0 10px #F0A25C;
+  -webkit-box-shadow: 0 0 10px #F0A25C;
+          box-shadow: 0 0 10px #F0A25C;
   font-size: 20px;
   margin: auto;
   border-radius: 30px;
@@ -3110,15 +3655,26 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin-bottom: 15px;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket02 .lo-ticket-download .qr-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 40px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 15px;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket02 .lo-ticket-download .qr-wrap .each-qr {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .museum-en .museum-ticket .ticket-wrap .ticket02 .lo-ticket-download .qr-wrap .each-qr .qr-img {
   margin-bottom: 10px;
@@ -3139,9 +3695,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 .museum-en .notice-accordion-wrap .go-reservation {
   font-family: "TTHakgyoansimUsanR";
   font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   width: 280px;
   height: 50px;
@@ -3151,6 +3713,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   color: #FFFFFF;
   font-weight: bold;
   text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .museum-en .notice-accordion-wrap .go-reservation:hover {
@@ -3170,11 +3733,18 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   height: 75px;
   background-color: #FFFBE6;
   font-size: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   margin-top: 15px;
 }
@@ -3187,11 +3757,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   font-weight: bold;
 }
 .museum-en .notice-accordion-wrap .notice-accordion-item .notice-accordion-title i {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   font-size: 20px;
 }
 .museum-en .notice-accordion-wrap .notice-accordion-item .notice-accordion-title.active i {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .museum-en .notice-accordion-wrap .notice-accordion-item .notice-accordion-content {
   max-height: 0;
@@ -3200,6 +3774,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   opacity: 0;
   background-color: #FFFBE6;
   visibility: hidden;
+  -webkit-transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
   transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
 }
 .museum-en .notice-accordion-wrap .notice-accordion-item .notice-accordion-content ul {
@@ -3243,7 +3818,8 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   display: block;
 }
 .museum-en .museum-load .load-map {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 500px;
   border: none;
@@ -3251,33 +3827,52 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .museum-en .museum-load .load-way {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 .museum-en .museum-load .load-way .public-transportation {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   background: #FFFBE6;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .museum-en .museum-load .load-way .public-transportation h4 {
   font-size: 24px;
   font-weight: bold;
 }
 .museum-en .museum-load .load-way .public-transportation .way-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 10px;
-  align-items: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .museum-en .museum-load .load-way .public-transportation .way-title-wrap .train,
 .museum-en .museum-load .load-way .public-transportation .way-title-wrap .bus,
 .museum-en .museum-load .load-way .public-transportation .way-title-wrap .car {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .museum-en .museum-load .load-way .public-transportation .way-title-wrap .train h5,
 .museum-en .museum-load .load-way .public-transportation .way-title-wrap .bus h5,
@@ -3297,12 +3892,20 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   margin: 0 10px;
 }
 .museum-en .museum-load .load-way .private-car {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: #FFFBE6;
   padding: 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .museum-en .museum-load .load-way .private-car h4 {
   font-size: 24px;
@@ -3321,11 +3924,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .museum-en .museum-load .load-way .private-car .more-notice {
   margin-top: auto;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .museum-en .museum-load .load-way .private-car .more-notice ul {
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 13px;
   padding: 10px;
 }
@@ -3334,9 +3941,15 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
 }
 .museum-en .museum-load .approach-measures {
   margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   width: 690px;
   height: 60px;
@@ -3344,6 +3957,7 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   background-color: rgba(240, 162, 92, 0.7);
   color: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .museum-en .museum-load .approach-measures h3 {
@@ -3363,7 +3977,10 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   }
   .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap {
     margin-left: 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
   }
   .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap .ticket01 {
@@ -3371,18 +3988,27 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
     width: 100%;
   }
   .ghibli-park-wrap .ghibli-inner .park-load .load-way {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .ghibli-museum-wrap .ghibli-inner .museum-info .museum-intro span br {
     display: none;
   }
   .ghibli-museum-wrap .ghibli-inner .museum-ticket .ticket-wrap {
     margin-left: 60px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
   }
   .ghibli-museum-wrap .ghibli-inner .museum-load .load-way {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (max-width: 400px) {
@@ -3402,7 +4028,10 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   }
   .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap {
     margin-left: 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
   }
   .ghibli-park-wrap .ghibli-inner .park-ticket .ticket-wrap .ticket01 {
@@ -3449,11 +4078,19 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
     font-style: 24px;
   }
   .ghibli-park-wrap .ghibli-inner .park-load .load-way {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .ghibli-park-wrap .ghibli-inner .park-load .load-way .public-transportation .way-title-wrap .train {
     border-bottom: 1px solid #7A8450;
@@ -3487,7 +4124,10 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
   }
   .ghibli-museum-wrap .ghibli-inner .museum-ticket .ticket-wrap {
     margin-left: 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
   }
   .ghibli-museum-wrap .ghibli-inner .museum-ticket .ticket-wrap .ticket01 {
@@ -3550,11 +4190,19 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
     font-style: 24px;
   }
   .ghibli-museum-wrap .ghibli-inner .museum-load .load-way {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .ghibli-museum-wrap .ghibli-inner .museum-load .load-way .public-transportation .way-title-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .ghibli-museum-wrap .ghibli-inner .museum-load .load-way .public-transportation .way-title-wrap .train {
     border-bottom: 1px solid #7A8450;
@@ -3570,14 +4218,23 @@ body.ghibli-total .side.ghibli-museum-entrance-en img {
     font-size: 20px;
   }
   .studio-wrap {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .studio-wrap .side {
     width: 100%;
     height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .studio-wrap .side img {
     max-width: 80%;
