@@ -1,5 +1,5 @@
 /* Import Local SCSS Files */
-@import 'variables', 'reset', 'fonts', 'header', 'footer';
+@import 'variables', 'reset', 'fonts', 'header','header-en', 'footer';
 
 /* ############ Common CSS ############*/
 // 가로 스크롤 제거
@@ -30,6 +30,9 @@ section{
     font-family: $Title-Font;
     font-size: $h2-px;
     margin-bottom: 10px;
+    &.ja{
+      font-family: $Title-Jp;
+    }
   }
   p{
     color: $Moss-Green;
@@ -51,6 +54,9 @@ section{
       color: $Clay-Brown;
       top: 50%; left: 50%;
       transform: translateY(-50%) translateX(-50%);
+      &.ja{
+        font-family: $Highlight-Jp;
+      }
     }
     &:hover{
       background: url(../images/more-btn-hover.png);
@@ -114,6 +120,9 @@ section{
         font-size: 32px;
         line-height: 150%;
         color: $White;
+        &.ja{
+          font-family: $Title-Jp;
+        }
       }
       strong{
         margin-bottom: 30px;
@@ -134,6 +143,13 @@ section{
         color: $White;
         cursor: pointer;
         transition: .5s;
+        &.ja{
+          padding: 10px;
+          font-family: $Title-Jp;
+          i{
+            top: 50%;
+          }
+        }
         &:hover{
           background-color: $White;
           color:$Smoky-Blue;
@@ -154,7 +170,25 @@ section{
   }
 }
 
+.main-page-music-wrap{
+  position: fixed;
+  bottom: 40px; right: 30px;
+  z-index: 100;
+  button{
+    background-color: transparent;
+    cursor: pointer;
+    &.main-page-music-on-btn{
+      display: none;
+    }
+    i{
+      font-size: 3rem;
+      color: $Main-Text;
+    }
+  }
+}
+
 /* ############ header-include ############*/
+
 
 /* ############ pagination ############*/
 .pagination-container {
@@ -316,6 +350,9 @@ section{
       text-shadow: 0 0 5px $White;
       opacity: 0;
       transition: 2.5s;
+      &.ja{
+        font-family: $Highlight-Jp;
+      }
     }
   }
   .ghibli-about{
@@ -339,6 +376,9 @@ section{
           h2{
             font-family: $Highlight-Font;
             color: $White;
+            &.ja{
+              font-family: $Highlight-Jp;
+            }
           }
           a{
             margin: 0;
@@ -360,7 +400,7 @@ section{
             }
           }
           .ghibli-about-click-desc{
-            width: 30%;
+            width: 32%;
             padding: 10px;
             margin-top: 50px;
             display: block;
@@ -593,9 +633,12 @@ section{
     width: 1160px; margin: auto;
     overflow: hidden; height: 100%;
     .main-title {
+      width: 100%;
+      padding-top: 100px;
       position: absolute;
-      top: 5%; left: 50%; transform: translateX(-50%);
+      top: 0; left: 50%; transform: translateX(-50%);
       z-index: 10;
+      background: linear-gradient($White, $White, $White, transparent);
     }
     .event-container {
       height: 100vh;
@@ -617,10 +660,15 @@ section{
               width: 750px;
               height: 300px;
               background: url(../images/ticket.png) no-repeat center;
-              background-size: 100%;
+              background-size: 99% 100%;
               display: flex;
               position: relative;
               align-items: center;
+              opacity: .5;
+              transition: .5s;
+              &.swiper-slide-next{
+                opacity: 1;
+              }
               }
               .event-ticket-img {
                 display: flex; align-items: center;
@@ -731,7 +779,8 @@ section{
         }
       }
       .event-calendar-wrap {
-        height: 100vh; width: 400px;
+        padding-top: 300px;
+        height: 85%; width: 400px;
         margin-left: 100px;
         border-right: 15px solid $Moss-Green-Light;
         border-left: 15px solid $Moss-Green-Light;
@@ -932,28 +981,11 @@ section{
       }
       .content {
         flex: 1;
-        .main-sec-title{
+        .main-title{
           display: flex;
           justify-content: space-between;
-          h2{
-            font-family: $Title-Font;
-            font-size: $h2-px;
-          }
           .more-btn{
-            width: 161px;
-            height: 41px;
-            background: url(../images/more-btn.png) no-repeat center;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            span{
-              font-family: $Highlight-Font;
-              font-size: 20px;
-              line-height: 1;
-              text-align: center;
-              position: static;
-            }
+            margin-right: 0;
           }
         }
         #sub-title{
@@ -1061,10 +1093,19 @@ section{
             font-weight: bold;
             -webkit-text-stroke: 2px rgb(255, 255, 255);
             font-family: $Title-Font;
+            cursor: pointer;
+            & .ja{
+              font-family: $Title-Jp;
+              font-size: 2.5rem;
+              -webkit-text-stroke: .5px rgb(255, 255, 255);
+            }
             .point-title1{
               color: $Sunset-Orange;
               position: absolute;
               top: 65%; left: 26%;
+              &.ja{
+                left: 20%;
+              }
             }
             .point-title2{
               color: $Sunset-Orange;
@@ -1168,6 +1209,9 @@ section{
       color: $Main-Text;
       font-family: $Title-Font;
       font-size: $h2-px;
+      &.ja{
+        font-family: $Title-Jp;
+      }
     }
     .email-box {
       width: 570px;
@@ -1190,6 +1234,7 @@ section{
       margin-top: 40px;
       p {
         color: $White;
+        line-height: 20px;
       }
     }
   }

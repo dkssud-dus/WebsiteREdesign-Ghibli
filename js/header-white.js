@@ -1,39 +1,80 @@
 /* -------------- header ---------------- */
-fetch('../include/header.html')
-  .then(response => response.text())
-  .then(data => {
-    document.querySelector('.header-include').innerHTML = data;
-    //언어 변경 이벤트
-    const globalIcon = document.querySelector('.global-btn');
-    const globalList = document.querySelector('.global-list');
-    /* console.log(globalIcon, globalList); */
-    globalIcon.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (globalList.style.display === "block") {
-        globalList.style.display = "none";
-      } else {
-        globalList.style.display = "block";
-      }
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  const langHeader = document.documentElement.lang.toLowerCase();
+  let headerFile = '../include/header.html'; // 기본 한국어
 
-    //서브메뉴 이벤트
-    const hamburgerBtn = document.querySelector('.hamburger-btn');
-    const subWrap = document.querySelector('.sub-wrap');
-    const closeBtn = document.querySelector('.close-btn');
+  if (langHeader.startsWith('en')) {  
+    headerFile = '../include/header_en.html'; // 영어
+  }else if(langHeader.startsWith('ja')){
+    headerFile = '../include/header_jp.html'; // 일본어
+  }else{
+    headerFile = '../include/header.html'; // 한국어
+  }
 
-    /* console.log(hamburgerBtn, subWrap); */
-    hamburgerBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (subWrap.style.display === "block") {
-        subWrap.style.display = "none";
-      } else {
-        subWrap.style.display = "block";
+  fetch(headerFile)
+    .then(response => {
+      if (!response.ok) throw new Error('Failed to fetch header');
+      return response.text();
+    })
+    .then(data => {
+      const headerInclude = document.querySelector('.header-include');
+      if (!headerInclude) {
+        console.error('.header-include element not found');
+        return;
       }
-    });
-    closeBtn.addEventListener('click', ()=>{
+      headerInclude.innerHTML = data;
+
+      // 언어 변경 이벤트
+      const globalIcon = document.querySelector('.global-btn');
+      const globalList = document.querySelector('.global-list');
+
+      globalIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+        globalList.style.display = (globalList.style.display === "block") ? "none" : "block";
+      });
+
+      // 서브메뉴 이벤트
+      const hamburgerBtn = document.querySelector('.hamburger-btn');
+      const subWrap = document.querySelector('.sub-wrap');
+      const closeBtn = document.querySelector('.close-btn');
+
+      hamburgerBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        subWrap.style.display = (subWrap.style.display === "block") ? "none" : "block";
+      });
+
+      closeBtn.addEventListener('click', () => {
         subWrap.style.display = "none";
+      });
+    })
+    .catch(err => {
+      console.error('Header loading error:', err);
     });
-  });
+});
+
+  /* -------------- footer ---------------- */
+  const langFooter = document.documentElement.lang.toLowerCase();
+
+  let footerFile;
+  
+  if (langFooter.startsWith('en')) { 
+  footerFile = '../include/footer_en.html';  // 영어
+} else if (langFooter.startsWith('ja')){
+  footerFile = '../include/footer_jp.html'; // 일본어
+} else {
+  footerFile = '../include/footer.html';     // 기본 한국어
+}
+  
+  fetch(footerFile)
+    .then(response => response.text())
+    .then(data => {
+      document.querySelector('.footer-include').innerHTML = data;
+  
+      window.onscroll = function () {
+        let btn = document.getElementById("topBtn");
+        btn.style.display = (window.scrollY > 300) ? "flex" : "none";
+      };
+    });
 
 /* -------------- subpage movie-list ---------------- */
 if (document.querySelector('.movie-list-content')) {
@@ -205,6 +246,15 @@ characterBtn.forEach(function(btn, index){
 /* -------------- section.movie-image ---------------- */
 // swiper
 var swiper = new Swiper(".movie-image-swiper", {
+  slidesPerView: 1,
+  breakpoints: {
+  768: {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    }
+  },
+  spaceBetween: 20,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
@@ -215,14 +265,3 @@ var swiper = new Swiper(".movie-image-swiper", {
   },
 });
 
-/* -------------- footer ---------------- */
-fetch('../include/footer.html')
-.then(response => response.text())
-.then(data => {
-  document.querySelector('.footer-include').innerHTML = data;})
-
-// 스크롤 이벤트
-  window.onscroll = function () {
-    let btn = document.getElementById("topBtn");
-    btn.style.display = (window.scrollY > 300) ? "flex" : "none";
-  };

@@ -44,45 +44,72 @@ document.querySelector('.musicOff').addEventListener('click', function() {
   window.scrollTo(0, 0);
 });
 
+// 메인페이지 내부에서 음악 제어 (모달X)
+document.querySelector('.main-page-music-off-btn').addEventListener('click', function(){
+  musicMainpage.pause();
+  musicMainpage.currentTime = 0;
+  document.querySelector('.main-page-music-off-btn').style.display = 'none';
+  document.querySelector('.main-page-music-on-btn').style.display = 'block';
+})
+document.querySelector('.main-page-music-on-btn').addEventListener('click', function(){
+  musicMainpage.play();
+  document.querySelector('.main-page-music-on-btn').style.display = 'none';
+  document.querySelector('.main-page-music-off-btn').style.display = 'block';
+})
+
 
 
 /* -------------- header ---------------- */
-fetch('../include/header.html')
+const langHeader = document.documentElement.lang.toLowerCase();
+let headerFile = '../include/header.html'; // 기본 한국어
+
+if (langHeader.startsWith('en')) {  
+  headerFile = '../include/header_en.html'; // 영어
+}else if(langHeader.startsWith('ja')){
+  headerFile = '../include/header_jp.html'; // 일본어
+}else{
+  headerFile = '../include/header.html'; // 한국어
+}
+
+fetch(headerFile)
   .then(response => response.text())
   .then(data => {
-    document.querySelector('.header-include').innerHTML = data;
-    //언어 변경 이벤트
+    if (langHeader.startsWith('en')) {
+      document.querySelector('.header-include-en').innerHTML = data;
+    } else {
+      document.querySelector('.header-include').innerHTML = data;
+    }
+
+    // 이하 이벤트 설정은 공통이니까 여기에 작성
     const globalIcon = document.querySelector('.global-btn');
     const globalList = document.querySelector('.global-list');
-    /* console.log(globalIcon, globalList); */
-    globalIcon.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (globalList.style.display === "block") {
-        globalList.style.display = "none";
-      } else {
-        globalList.style.display = "block";
-      }
-    });
 
-    //서브메뉴 이벤트
+    if (globalIcon && globalList) {
+      globalIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+        globalList.style.display = (globalList.style.display === "block") ? "none" : "block";
+      });
+    }
+
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const subWrap = document.querySelector('.sub-wrap');
     const closeBtn = document.querySelector('.close-btn');
 
-    /* console.log(hamburgerBtn, subWrap); */
-    hamburgerBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (subWrap.style.display === "block") {
+    if (hamburgerBtn && subWrap && closeBtn) {
+      hamburgerBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        subWrap.style.display = (subWrap.style.display === "block") ? "none" : "block";
+      });
+
+      closeBtn.addEventListener('click', () => {
         subWrap.style.display = "none";
-      } else {
-        subWrap.style.display = "block";
-      }
-    });
-    closeBtn.addEventListener('click', ()=>{
-        subWrap.style.display = "none";
-    });
+      });
+    }
   });
-  
+
+
+
+
 /* -------------------- pagenation -------------------- */
 document.addEventListener('DOMContentLoaded', function() {
   let mainPagination = document.getElementById('mainPagination');
@@ -361,12 +388,27 @@ function showContent(index) {
 
 
 /* -------------- footer ---------------- */
-  fetch('../include/footer.html')
-.then(response => response.text())
-.then(data => {
-  document.querySelector('.footer-include').innerHTML = data;})
+const langFooter = document.documentElement.lang.toLowerCase();
 
-  window.onscroll = function () {
-    let btn = document.getElementById("topBtn");
+let footerFile;
+
+if (langFooter.startsWith('en')) { 
+  footerFile = '../include/footer_en.html';  // 영어
+} else if (langFooter.startsWith('ja')){
+  footerFile = '../include/footer_jp.html'; // 일본어
+} else {
+  footerFile = '../include/footer.html';     // 기본 한국어
+}
+
+fetch(footerFile)
+  .then(response => response.text())
+  .then(data => {
+    document.querySelector('.footer-include').innerHTML = data;
+
+    window.onscroll = function () {
+  const btn = document.getElementById("topBtn");
+  if (btn) {
     btn.style.display = (window.scrollY > 300) ? "flex" : "none";
-  };
+  }
+};
+  });

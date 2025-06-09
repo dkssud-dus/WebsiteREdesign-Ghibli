@@ -1,3 +1,6 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts';
+
 footer {
   position: relative;
   background: $Main-Text;
