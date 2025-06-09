@@ -406,9 +406,8 @@ fetch(footerFile)
     document.querySelector('.footer-include').innerHTML = data;
 
     window.onscroll = function () {
-  const btn = document.getElementById("topBtn");
-  if (btn) {
-    btn.style.display = (window.scrollY > 300) ? "flex" : "none";
-  }
-};
-  });
+      const btn = document.getElementById("topBtn");
+      if (btn) {
+        btn.style.display = (window.scrollY > 300) ? "flex" : "none";
+      }
+    };
