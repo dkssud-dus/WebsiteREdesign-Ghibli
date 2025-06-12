@@ -3,9 +3,9 @@
 
 <br/>
 
-**조효희,**   
-김채연, Kim chaeyeon  
-박서영,  
+**조효희, Jo hyo hee**      
+김채연, Kim chae yeon     
+박서영, Park seo young    
 
 <br/>
 <br/>
