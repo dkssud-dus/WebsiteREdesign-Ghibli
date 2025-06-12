@@ -403,7 +403,7 @@ Studio Ghibli
 ---
 
 ## 5. 관련 링크
-Figma, Design   
+Figma, [Design](https://www.figma.com/design/n5K7PcOyeidEmt1Bwpxemg/Untitled?node-id=238-100&t=j6WkMRgZOo424JXJ-1)   
 Figma, [Presentation](https://www.figma.com/deck/pcClsPEsstxrAPdevw9j7N/-webRedesign--Ghibli-Presentation?node-id=12-1483&t=yceARDUQOgPoNbYE-1)
 
 </br>
