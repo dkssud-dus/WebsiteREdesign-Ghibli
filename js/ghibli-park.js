@@ -1,14 +1,14 @@
 /* -------------- header ---------------- */
 document.addEventListener('DOMContentLoaded', () => {
   const langHeader = document.documentElement.lang.toLowerCase();
-  let headerFile = '../include/header.html'; // 기본 한국어
+  let headerFile = '/webRedesign-StudioGhibli/include/header.html'; // 기본 한국어
 
   if (langHeader.startsWith('en')) {  
-    headerFile = '../include/header_en.html'; // 영어
+    headerFile = '/webRedesign-StudioGhibli/include/header_en.html'; // 영어
   }else if(langHeader.startsWith('ja')){
-    headerFile = '../include/header_jp.html'; // 일본어
+    headerFile = '/webRedesign-StudioGhibli/include/header_jp.html'; // 일본어
   }else{
-    headerFile = '../include/header.html'; // 한국어
+    headerFile = '/webRedesign-StudioGhibli/include/header.html'; // 한국어
   }
 
   fetch(headerFile)
@@ -59,11 +59,11 @@ const langFooter = document.documentElement.lang.toLowerCase();
 let footerFile;
 
 if (langFooter.startsWith('en')) { 
-  footerFile = '../include/footer_en.html';  // 영어
+  footerFile = '/webRedesign-StudioGhibli/include/footer_en.html';  // 영어
 } else if (langFooter.startsWith('ja')){
-  footerFile = '../include/footer_jp.html'; // 일본어
+  footerFile = '/webRedesign-StudioGhibli/include/footer_jp.html'; // 일본어
 } else {
-  footerFile = '../include/footer.html';     // 기본 한국어
+  footerFile = '/webRedesign-StudioGhibli/include/footer.html';     // 기본 한국어
 }
 
 fetch(footerFile)

@@ -61,14 +61,14 @@ document.querySelector('.main-page-music-on-btn').addEventListener('click', func
 
 /* -------------- header ---------------- */
 const langHeader = document.documentElement.lang.toLowerCase();
-let headerFile = '/WebsiteREdesign-Ghibli/include/header.html'; // 기본 한국어
+let headerFile = '/webRedesign-StudioGhibli/include/header.html'; // 기본 한국어
 
 if (langHeader.startsWith('en')) {  
-  headerFile = '/WebsiteREdesign-Ghibli/include/header_en.html'; // 영어
+  headerFile = '/webRedesign-StudioGhibli/include/header_en.html'; // 영어
 }else if(langHeader.startsWith('ja')){
-  headerFile = '/WebsiteREdesign-Ghibli/include/header_jp.html'; // 일본어
+  headerFile = '/webRedesign-StudioGhibli/include/header_jp.html'; // 일본어
 }else{
-  headerFile = '/WebsiteREdesign-Ghibli/include/header.html'; // 한국어
+  headerFile = '/webRedesign-StudioGhibli/include/header.html'; // 한국어
 }
 
 fetch(headerFile)
@@ -393,11 +393,11 @@ const langFooter = document.documentElement.lang.toLowerCase();
 let footerFile;
 
 if (langFooter.startsWith('en')) { 
-  footerFile = '/WebsiteREdesign-Ghibli/include/footer_en.html';  // 영어
-} else if (langFooter.startsWith('ja')) {
-  footerFile = '/WebsiteREdesign-Ghibli/include/footer_jp.html';  // 일본어
+  footerFile = '/webRedesign-StudioGhibli/include/footer_en.html';  // 영어
+} else if (langFooter.startsWith('ja')){
+  footerFile = '/webRedesign-StudioGhibli/include/footer_jp.html'; // 일본어
 } else {
-  footerFile = '/WebsiteREdesign-Ghibli/include/footer.html';     // 기본 한국어
+  footerFile = '/webRedesign-StudioGhibli/include/footer.html';     // 기본 한국어
 }
 
 fetch(footerFile)
