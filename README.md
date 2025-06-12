@@ -1,4 +1,4 @@
-# **Website Redesign Project:**
+# **Website Redesign Project:** 
 ### 스튜디오 지브리 Studio Ghibli   
 
 <br/>
