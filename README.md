@@ -346,13 +346,16 @@ Studio Ghibli
 #### 3.2.4.1. 그대들은 어떻게 살 것인가 (김채연)
 ![subpage-movie-banner](https://github.com/user-attachments/assets/44584e19-1dc3-45ec-ab8b-38908a9c24bf)
 1. 페이지 진입시 영화 트레일러가 음소거 상태로 자동재생 되도록 하였다.
+
 ![subpage-movie-content](https://github.com/user-attachments/assets/82aa1bcd-2842-4caa-adda-9e98bfc54509) 
 1. 바로 등장하는 음악 컨트롤러는, 음악의 재생을 활성화하거나 비활성화 할 수 있도록 하였으며, 음악 진행바를 클릭하여 음악 진행 위치를 조절할 수 있도록 하였다.
 2. 양 옆의 ≪≫ 버튼은 음악이 한 개만 삽입되었으므로, 재생 중인 음악이 처음으로 되돌아가는 역할만 수행하도록 하였다.
+   
 ![subpage-movie-content2](https://github.com/user-attachments/assets/b7b45031-b6da-42a1-9d37-b987cc6643ad)
 1. "애니메이션 주요 캐릭터 만나기"에서는, 각각의 등장인물을 클릭하여 명대사와 간단한 설명 · 이미지를 볼 수 있도록 하였다.
 2. 등장인물 아이콘 / 명대사 및 이미지, 간단한 설명 / 영상 링크 순으로 3열 배치되도록 하였다.
 3. 반응형에서는, "애니메이션 주요 캐릭터 만나기"의 배치가 변경되어 이미지와 설명 하단에 영상 링크를 확인 가능하도록 하였다.
+   
 ![subpage-movie-content3](https://github.com/user-attachments/assets/396e9ebd-959a-4b39-b879-1e76a9489ad1)  
 1. "애니메이션 속 장면 다시 보기"에서는, 스와이퍼를 사용하여 영화 속 장면을 볼 수 있도록 하였다.
 2. 반응형에서는, 3열 배치된 이미지가 1열만 배치되어 하나의 이미지를 크게 볼 수 있도록 하였다.
@@ -393,6 +396,7 @@ Studio Ghibli
 ![subpage-qna-banner](https://github.com/user-attachments/assets/7d43857a-294a-4a20-9ed0-e552e8c294df)
 1. 지브리의 QnA 서브페이지이다.
 2. 상단의 배너는 좌우로 움직이는 애니메이션을 활용하여 지브리의 작품 이름을 담았으며, 눈이 피로하지 않게 글자는 컬러가 없이 진행되었으며 해시태그 부분은 포인트 컬러를 사용하여 생동감있게 표현하였다.
+    
 ![subpage-qna-content](https://github.com/user-attachments/assets/22413aa9-49a5-4215-bf33-b30389b38c5f)
 1. 자주 묻는 질문은 아코디언 형태를 활용하여 질문이 한눈에 보이도록 제작하였으며, 활성화된 질문은 다른 질문이 클릭되었을 때 비활성화 되도록 구현하였다.
 2. '찾으시는 내용' 부분은 호버시 컬러가 변경되며 상단으로 약간 이동하는 애니메이션 효과를 주었다.
