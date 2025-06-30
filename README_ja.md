@@ -427,7 +427,7 @@
 </br>
 </br>
 
-### 3.2.4. 映画リスト
+### 3.2.4. [映画リスト](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_jp/movie-list_jp.html)
 ![subpage-movielist-banner](https://github.com/user-attachments/assets/94b940dd-aa11-4d2e-aee7-0c51f329acc9)
 
 <br/>
@@ -510,7 +510,7 @@
 </br>
 </br>
 
-#### 3.2.5. [ジブリロケーション](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_kr/total-ghibli.html)
+#### 3.2.5. [ジブリロケーション](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_jp/total-ghibli_jp.html)
 ![subpage-location](https://github.com/user-attachments/assets/bb4d111e-91ea-4076-8c82-d5cfcfe9da6b)
 
 <br/>
@@ -526,7 +526,7 @@
 </br>
 </br>
 
-#### 3.2.5.1. [ジブリパーク](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_kr/ghibli-park.html)
+#### 3.2.5.1. [ジブリパーク](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_jp/ghibli-park_jp.html)
 ![subpage-park](https://github.com/user-attachments/assets/a6d9e4b1-3b96-4d56-b397-d94b237b8ab5)
 
 <br/>
@@ -544,7 +544,7 @@
 </br>
 </br>
 
-#### 3.2.5.2. [ジブリ美術館](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_kr/ghibli-museum.html)
+#### 3.2.5.2. [ジブリ美術館](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_jp/ghibli-museum_jp.html)
 ![subpage-museum](https://github.com/user-attachments/assets/fc78825e-5491-4a51-8bb5-84dc74776f7f)
 
 <br/>
@@ -562,7 +562,7 @@
 </br>
 </br>
 
-#### 3.2.6. [Q&A](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_kr/ghibli-QnA.html)
+#### 3.2.6. [Q&A](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_jp/ghibli-QnA_jp.html)
 ![subpage-qna-banner](https://github.com/user-attachments/assets/7d43857a-294a-4a20-9ed0-e552e8c294df)
 
 <br/>
