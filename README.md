@@ -52,7 +52,7 @@
 
 | Before | After |
 |--------|-------|
-| ![image](https://github.com/user-attachments/assets/fee27526-16de-4812-bef4-1cc21b358859) | ![image](https://github.com/user-attachments/assets/096529f0-7612-4ccf-8159-1beed1f1bfaf) |
+| ![image](https://github.com/user-attachments/assets/fee27526-16de-4812-bef4-1cc21b358859) | ![image](https://github.com/user-attachments/assets/9c633cca-858b-410f-9c45-c00f38fa3d6e) |
 
 </br>
 </br>
