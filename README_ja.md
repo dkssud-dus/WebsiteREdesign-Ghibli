@@ -97,7 +97,7 @@
 
 ## 3. ページ別機能
 
-### 3.1. [メインページ](https://dkssud-dus.github.io/webRedesign-StudioGhibli/)
+### 3.1. [メインページ](https://dkssud-dus.github.io/webRedesign-StudioGhibli/index_jp.html)
 
 ---
 
@@ -323,7 +323,7 @@
 
 ---
 
-### 3.2.1. [Studio Ghibli情報](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_kr/ghibli-data.html)
+### 3.2.1. [Studio Ghibli情報](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_jp/ghibli-data_jp.html)
 ![subpage-company-banner](https://github.com/user-attachments/assets/09ac48f0-9504-45e5-9a46-671e8a19d61b)
 
 <br/>
@@ -352,7 +352,7 @@
 </br>
 </br>
 
-### 3.2.2. [お知らせ](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_kr/ghibli-news.html)
+### 3.2.2. [お知らせ](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_jp/ghibli-news_jp.html)
 ![subpage-news-banner](https://github.com/user-attachments/assets/d25938f7-5999-4969-a6e0-a8fc01b7cffa)
 
 <br/>
@@ -383,7 +383,7 @@
 </br>
 </br>
 
-### 3.2.3. [イベント](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_kr/ghibi-event.html)
+### 3.2.3. [イベント](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_jp/ghibi-event_jp.html)
 ![subpage-event-banner](https://github.com/user-attachments/assets/ed6dfa8d-a62b-4a7a-bdf9-476bc5342643)
 
 <br/>
@@ -427,7 +427,7 @@
 </br>
 </br>
 
-### 3.2.4. [映画リスト](https://dkssud-dus.github.io/webRedesign-StudioGhibli/pages_kr/movie-list.html)
+### 3.2.4. 映画リスト
 ![subpage-movielist-banner](https://github.com/user-attachments/assets/94b940dd-aa11-4d2e-aee7-0c51f329acc9)
 
 <br/>
